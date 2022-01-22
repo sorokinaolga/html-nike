@@ -3,8 +3,11 @@ html
         link(rel="stylesheet", href="css/style.min.css")
     body 
         include html/header
-        main.page
-            h1 Главная старница
-            p Это главная страница
+        main
+            include html/promo
+            include html/features
+            include html/categorys
+            include html/categorys
+            include html/popular
         include html/footer
         script(src="js/app.min.js")
