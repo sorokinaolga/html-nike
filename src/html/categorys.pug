@@ -1,20 +1,15 @@
+include ./products-list
+
+- 
+  var products = [
+    {title: "Nike Leron X1", price: "75.00", path: "@img/products-1.png"},
+    {title: "Nike Shoes 19", price: "75.00", path: "@img/products-2.png"},
+    {title: "Nike Leron X1", price: "75.00", path: "@img/products-3.png"},
+    {title: "Nike Leron X1", price: "75.00", path: "@img/products-4.png"},
+  ]
+
 section.categorys
-    h2 Categorys
-    p Similler product
-    ul.products-list
-        li.products-list__item
-            h3 Nike Leron X1
-            p $75.00
-            button Add To Cart
-        li.products-list__item
-            h3 Nike Shoes 19 
-            p $75.00
-            button Add To Cart
-        li.products-list__item
-            h3 Nike Leron X1
-            p $75.00
-            button Add To Cart
-        li.products-list__item
-            h3 Nike Leron X1
-            p $75.00
-            button Add To Cart
+  .container
+    h2.categorys__title Categorys
+    p.categorys__text Similler product
+    +products-list(products)
