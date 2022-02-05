@@ -27,11 +27,21 @@
     list-style: none;
     margin: 0;
     padding: 20px 0 0;
-    font-family: $ff-main;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 35px;
-    opacity: 0.8;
+    a {
+      color: $ff-color-light;
+      font-family: $ff-main;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 35px;
+      opacity: 0.8;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 1;
+      }
+    }
   }
 
   &__social-list {
