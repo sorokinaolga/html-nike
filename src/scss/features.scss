@@ -74,6 +74,7 @@
     border: none;
     padding: 21px 53px 21px 28px;
     margin-right: 30px;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -101,6 +102,7 @@
     border-image-slice: 1;
     border-image-source: linear-gradient(108.22deg, #fbff41 -0.67%, #ec00e2 100%);
     padding: 21px 67px 21px 39px;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -127,6 +129,12 @@
     width: 21px;
     height: 21px;
     border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-black;
+    }
 
     &--beige {
       background-color: #dfd2bf;
@@ -157,5 +165,11 @@
     color: #00000099;
     border: 1px solid #3e3e3e4d;
     padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-black;
+      color: $color-black;
+    }
   }
 }
