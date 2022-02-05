@@ -1,7 +1,7 @@
 mixin products-list(list)
   ul.products-list
     for item in list
-      - var {title="", price="0", path} = item
+      - const {title="", price="0", path} = item
         li.products-list__item
           .products-list__picture
             img(src=path)
