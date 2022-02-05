@@ -16,6 +16,7 @@
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
+    min-height: 90px;
   }
 }
 
@@ -27,7 +28,7 @@
 
   &__link {
     display: inline-block;
-    padding: 36px 35px;
+    padding: 37px;
     text-decoration: none;
     text-transform: uppercase;
     line-height: 16px;
