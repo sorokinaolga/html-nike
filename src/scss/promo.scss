@@ -1,0 +1,113 @@
+.promo {
+  background-color: #fffad0;
+
+  .container {
+    position: relative;
+    background-image: url(../img/promo.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-height: 909pxgit;
+  }
+
+  &__text {
+    padding: 226px 0 0 86px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-family: $ff-bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #00a79d;
+    border-bottom: 1px solid #00a79d;
+    padding-bottom: 7px;
+    margin: 0 0 19px;
+  }
+
+  &__name {
+    max-width: 575px;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: 126px;
+    line-height: 125px;
+    text-transform: uppercase;
+    color: $ff-color-title;
+    margin: 0 0 50px;
+  }
+
+  &__price {
+    font-family: $ff-bold;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #ff9a00;
+    margin: 0 0 40px;
+  }
+
+  &__action {
+    position: relative;
+    font-family: $ff-bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 57px 20px 37px;
+    border: none;
+    background: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+    box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 35px;
+      transform: translateY(-50%);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 8px solid #fff;
+    }
+  }
+
+  .social-list {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    gap: 32px;
+    font-size: 0;
+    background: linear-gradient(
+        273.64deg,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.12) 93.23%,
+        rgba(255, 255, 255, 0.24) 100%
+      ),
+      rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(370px);
+    padding: 18px 25px;
+
+    &__item {
+      width: 26px;
+      height: 22px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &__item--fb {
+      background-image: url(../img/icons/icons.svg#social-i-fb);
+    }
+    &__item--tw {
+      background-image: url(../img/icons/icons.svg#social-i-tw);
+    }
+    &__item--inst {
+      background-image: url(../img/icons/icons.svg#social-i-inst);
+    }
+    &__item--tube {
+      background-image: url(../img/icons/icons.svg#social-i-tube);
+    }
+  }
+}
