@@ -7,11 +7,18 @@ section.features
       p.features__text The Nike SB Nyjah Free 2 is a sequel worthy of its predecessor. Inspired by the iconic Nike Air Zoom Spiridon, the original rubber design has been updated with mesh panels to help your feet stay cool through your hottest skate sessions.
       .features__colors
         h3.features__subtitle Colors:
-        ul.colors-list
-          li.colors-list__item.colors-list__item--beige
-          li.colors-list__item.colors-list__item--brown
-          li.colors-list__item.colors-list__item--yellow
-          li.colors-list__item.colors-list__item--blue
+        .color-chooser
+          label.color-chooser__label(for="color_1") Beige
+          input.color-chooser__item(type="radio" name="color" id="color_1" style="background-color: #dfd2bf;")
+
+          label.color-chooser__label(for="color_2") Brown
+          input.color-chooser__item(type="radio" name="color" id="color_2" style="background-color: #dba82f;")
+
+          label.color-chooser__label(for="color_3") Yellow
+          input.color-chooser__item(type="radio" name="color" id="color_3" style="background-color: #ffef5a;")
+
+          label.color-chooser__label(for="color_4") Blue
+          input.color-chooser__item(type="radio" name="color" id="color_4" style="background-color: #5aceff;")
       .features__size
         h3.features__subtitle Size:
         .size-chooser

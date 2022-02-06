@@ -118,35 +118,31 @@
   }
 }
 
-.colors-list {
+.color-chooser {
+  vertical-align: middle;
   display: inline-flex;
   gap: 13.5px;
-  list-style: none;
-  margin: 0 0 0 26px;
-  padding: 0;
+  margin-left: 26px;
+
+  &__label {
+    display: none;
+  }
 
   &__item {
     width: 21px;
     height: 21px;
+    margin: 0;
     border-radius: 50%;
     border: 1px solid transparent;
     cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: all 0.2s ease-in-out 0s;
 
-    &:hover {
+    &:hover,
+    &:checked {
       border-color: $color-black;
-    }
-
-    &--beige {
-      background-color: #dfd2bf;
-    }
-    &--brown {
-      background-color: #dba82f;
-    }
-    &--yellow {
-      background-color: #ffef5a;
-    }
-    &--blue {
-      background-color: #5aceff;
+      transition: all 0.2s ease-in-out 0s;
     }
   }
 }
