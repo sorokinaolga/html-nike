@@ -14,10 +14,17 @@ section.features
           li.colors-list__item.colors-list__item--blue
       .features__size
         h3.features__subtitle Size:
-        ul.size-list
-          li.size-list__item UK 5.5
-          li.size-list__item EU 39
-          li.size-list__item UK 6.5
-          li.size-list__item UK 7.5
+        .size-chooser
+          input.size-chooser__item(type="radio" name="size" id="size_1")
+          label.size-chooser__label(for="size_1") UK 5.5
+
+          input.size-chooser__item(type="radio" name="size" id="size_2")
+          label.size-chooser__label(for="size_2") EU 39
+
+          input.size-chooser__item(type="radio" name="size" id="size_3")
+          label.size-chooser__label(for="size_3") UK 6.5
+
+          input.size-chooser__item(type="radio" name="size" id="size_4")
+          label.size-chooser__label(for="size_4") UK 7.5
       button.features__btn-card(type="button") Add to bag
       button.features__btn-wl(type="button") Wishlist
