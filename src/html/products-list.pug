@@ -4,7 +4,7 @@ mixin products-list(list)
       - const {title="", price="0", path} = item
         li.products-list__item
           .products-list__picture
-            img(src=path)
+            img(src=path, alt=title)
           .products-list__colors
             span.products-list__colors-item.products-list__colors-item--beige
             span.products-list__colors-item.products-list__colors-item--brown
