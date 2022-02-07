@@ -3,6 +3,10 @@
   color: $ff-color-light;
   padding: 84px 87px 34px 83px;
 
+  @media (max-width: 1000px) {
+    padding: 84px 42px 34px 42px;
+  }
+
   &__main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding: 0 0 81px;
@@ -21,6 +25,26 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+
+    @media (max-width: 1200px) {
+      gap: 70px;
+    }
+
+    @media (max-width: 950px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 850px) {
+      gap: 70px;
+    }
+
+    @media (max-width: 700px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 
   &-submenu {
@@ -48,6 +72,14 @@
     display: flex;
     gap: 40px;
     font-size: 0;
+
+    @media (max-width: 1200px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 
   &__social-item {

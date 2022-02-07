@@ -7,10 +7,35 @@
     background-repeat: no-repeat;
     background-position: right top;
     min-height: 909px;
+
+    @media (max-width: 1000px) {
+      background-position: 350px top;
+    }
+
+    @media (max-width: 700px) {
+      background-position: 200px top;
+    }
+
+    @media (max-width: 550px) {
+      min-height: 400px;
+      background-size: contain;
+    }
+
+    @media (max-width: 450px) {
+      background-position: 100px top;
+    }
   }
 
   &__text {
     padding: 226px 0 0 86px;
+
+    @media (max-width: 700px) {
+      padding: 226px 0 0 50px;
+    }
+
+    @media (max-width: 550px) {
+      padding: 50px 0 0 40px;
+    }
   }
 
   &__title {
@@ -24,6 +49,11 @@
     border-bottom: 1px solid #00a79d;
     padding-bottom: 7px;
     margin: 0 0 19px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 
   &__name {
@@ -35,6 +65,21 @@
     text-transform: uppercase;
     color: $ff-color-title;
     margin: 0 0 50px;
+
+    @media (max-width: 650px) {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
 
   &__price {
@@ -45,6 +90,11 @@
     text-transform: uppercase;
     color: #ff9a00;
     margin: 0 0 40px;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
 
   &__action {
@@ -74,6 +124,15 @@
     &:hover,
     &:focus {
       box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      padding: 15px 57px 15px 27px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+      line-height: 16px;
     }
   }
 

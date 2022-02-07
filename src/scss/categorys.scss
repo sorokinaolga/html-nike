@@ -4,6 +4,14 @@
   .container {
     padding: 170px 102px 168px;
     text-align: center;
+
+    @media (max-width: 1000px) {
+      padding: 85px 51px 84px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 40px;
+    }
   }
 
   &__title {
@@ -27,5 +35,10 @@
     text-transform: uppercase;
     color: $ff-color-title;
     margin: 0 0 60px;
+
+    @media (max-width: 600px) {
+      font-size: 40px;
+      line-height: 52px;
+    }
   }
 }

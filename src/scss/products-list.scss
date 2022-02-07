@@ -7,6 +7,14 @@
   gap: 40px;
   text-align: center;
 
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
+
   &__item {
     padding: 20px 10px;
     box-shadow: 30px 20px 45px rgba(0, 0, 1, 0.03);
@@ -20,6 +28,12 @@
     position: relative;
     margin: 27px auto 35px;
 
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -31,6 +45,11 @@
       background-color: #e0e1e5;
       transform: translate(-50%, -50%);
       z-index: -1;
+    }
+
+    @media (max-width: 900px) {
+      width: 200px;
+      height: 200px;
     }
   }
 
