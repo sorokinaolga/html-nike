@@ -1,6 +1,6 @@
 # Адаптивная верстка landing page
 
-[Посмотреть проект](https://sorokinaolga.github.io/html-nike/)
+[Смотреть проект здесь](https://sorokinaolga.github.io/html-nike/)
 
 ## Используемые технологии
 
